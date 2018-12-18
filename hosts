@@ -1,0 +1,13 @@
+[linux-server]
+linux-web.example.com
+[linux-server:vars]
+ansible_user=root
+ansible_connection=ssh
+[win-server]
+windows-web
+[win-server:vars]
+ansible_user=Administrator
+ansible_connection=winrm
+ansible_port=5986
+ansible_winrm_transport=basic
+ansible_winrm_server_cert_validation=ignore

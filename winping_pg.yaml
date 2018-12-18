@@ -1,0 +1,14 @@
+---
+- hosts: win-server
+  gather_facts: yes
+  tasks:
+  - name: Checking connection to {{ inventory_hostname }}
+    win_ping:
+
+  - name: Change current hostname to {{ inventory_hostname }}
+    win_hostname:
+      name: "{{ inventory_hostname }}"
+      restart: yes
+
+  - name: reboot if installing Web-Server feature requires it
+    win_reboot:

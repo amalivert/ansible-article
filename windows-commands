@@ -1,0 +1,1 @@
+winrm set winrm/config/service/auth @{Basic="false"; Kerberos="true"}

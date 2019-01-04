@@ -1,2 +1,6 @@
+# using pip:
 pip3 install "pywinrm>=0.3.0"
 pip install pywinrm[kerberos]
+
+# using yum:
+yum install -y ansible python2-winrm python-requests-kerberos

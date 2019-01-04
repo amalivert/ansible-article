@@ -1,0 +1,2 @@
+pip3 install "pywinrm>=0.3.0"
+pip install pywinrm[kerberos]
